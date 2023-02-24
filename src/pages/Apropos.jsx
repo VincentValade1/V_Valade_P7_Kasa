@@ -8,12 +8,12 @@ import '../styles/Apropos.css'
 function Apropos () {
     return (
         <div>
-            <main className="home-main-div">
+            <main className="main-div">
                 <Header />
                 <Banner className='apropos'>
                     <img src={AproposBanner} alt='vue sur un fjord' />
                 </Banner>
-                <div className="collapses-div">
+                <div className="apropos-collapses-div">
                     <Collapse open title="Fiabilité">
                         Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.
                     </Collapse>

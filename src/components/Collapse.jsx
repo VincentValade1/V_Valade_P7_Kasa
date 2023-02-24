@@ -1,23 +1,7 @@
-// import '../styles/Collapse.css'
-
-// function Collapse ({children, className}) {
-//     return ( 
-//         <div className={`collapse ${className}`}>
-//             {children}
-//         </div>
-//     )
-// }
-
-// export default Collapse
-
 import React, { useState } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp, faChevronDown } from "@fortawesome/free-solid-svg-icons";
-import '../styles/Collapse.css'
-// interface IProps {
-//   open?: boolean;
-//   title: string;
-// }
+import '../styles/Collapse.css';
 
 function Collapse ({ open, children, title }) {
   const [isOpen, setIsOpen] = useState(open);

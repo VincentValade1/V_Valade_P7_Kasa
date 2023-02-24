@@ -8,7 +8,7 @@ import '../styles/Home.css'
 function Home() {
     return (
         <div>
-            <main className="home-main-div">
+            <main className="main-div">
                 <Header />
                 <Banner className='home'>
                     <img src={homeBanner} alt='ocean contre falaise' />
