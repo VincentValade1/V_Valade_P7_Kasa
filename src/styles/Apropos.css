@@ -1,0 +1,10 @@
+.collapses-div {
+    margin-inline: 208px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    /* margin: auto; */
+    margin-top: 31px;
+    background: #E5E5E5;
+    margin-bottom: 46px;   
+}

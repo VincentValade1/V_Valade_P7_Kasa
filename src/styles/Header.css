@@ -1,0 +1,23 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 68px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    align-items: center;
+}
+
+header a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+header nav a:hover{
+  border-bottom: 2px solid #FF6060  ;
+}
+
