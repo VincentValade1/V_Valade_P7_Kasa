@@ -1,5 +1,45 @@
-.full-collapse-card {
-    margin-bottom: 33px;
+.apropos-collapses-div {
+    margin-inline: 108px;
+    /* margin: auto; */
+    margin-top: 31px;
+    margin-bottom: 46px;
+}
+
+.logement-collapses-div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 14px;
+}
+
+/*  */
+.apropos-full-collapse-card {
+    margin-bottom: 31px;
+    border-radius: 5px;
+}
+
+.logement-full-collapse-card {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    border-radius: 10px;
+}
+
+.logement-full-collapse-card h2 {
+    font-size: 18px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+}
+
+/*  */
+.logement-collapses-div .collapse-card-header {
+    border-radius: 10px;
+}
+
+.logement-collapses-div .collapse-card-text {
+    border-radius: 0 0 10px 10px;
+    font-size: 18px;
 }
 
 .collapse-card-header {
@@ -25,7 +65,7 @@
 
 .collapse-card-text {
     background: #F7F7F7;
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 0 0 5px 5px;
     margin-top: -8px;
     display: flex;
     z-index: 0;
@@ -35,8 +75,18 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 34px;
+    height: 100%;
+}
+
+.equipments-div {
+    margin: 0;
+    padding: 0;
+    line-height: 26px;
 }
 
 .svg-inline--fa {
     height: 23px;
 }
+
+
+

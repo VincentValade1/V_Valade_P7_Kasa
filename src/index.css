@@ -18,10 +18,28 @@ img {
   object-fit: cover;
 }
 
-#root {
-  margin: 0;
-}
-
 * {
   font-family: 'Roboto', sans-serif;
 }
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  margin-top: 40px;
+}
+
+main, header {
+  margin-inline: 100px;
+
+}
+
+ul {
+  list-style: none;
+}
+
+/* masquage scrollbar latéral de la page */
+::-webkit-scrollbar {
+  display: none;
+  }

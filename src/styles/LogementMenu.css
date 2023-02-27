@@ -50,6 +50,7 @@
     list-style: none;
     padding-inline-start: 0;
     min-height: 25px;
+    margin-bottom: 0;
 }
 
 .tag {
@@ -65,4 +66,9 @@
     align-items: center;
     margin-right: 10px;
     padding-inline: 30px;
+}
+
+.logement-collapses-div {
+    display: flex;
+    flex-direction: row;
 }
