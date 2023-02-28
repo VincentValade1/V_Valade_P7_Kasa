@@ -9,7 +9,7 @@ function Apropos () {
                 <img src={AproposBanner} alt='vue sur un fjord' />
             </Banner>
             <div className="apropos-collapses-div">
-                <Collapse title="Fiabilité" className="apropos-full-collapse-card">
+                <Collapse open title="Fiabilité" className="apropos-full-collapse-card">
                     Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.
                 </Collapse>
                 <Collapse title="Respect" className="apropos-full-collapse-card">

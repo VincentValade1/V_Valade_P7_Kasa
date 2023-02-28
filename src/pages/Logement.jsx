@@ -1,13 +1,8 @@
-import Carousel from '../components/Carousel';
+// import Slideshow from '../components/Slideshow';
 import LogementMenu from '../components/LogementMenu';
 
 function Logement() {
-    return (
-        <main>
-            <Carousel />
-            <LogementMenu />
-        </main>
-    )
+    return <LogementMenu />
 }
 
 export default Logement
