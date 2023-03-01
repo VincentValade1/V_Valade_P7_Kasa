@@ -14,6 +14,12 @@
     justify-content: flex-end;
 }
 
+.host-rate-div {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
 .host-portrait {
     display: flex;
     width: 64px;
@@ -28,6 +34,14 @@
     text-align: right;
     margin-right: 10px;
     white-space:pre-line;
+}
+
+.stars-rates-div {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .name-tags-div h1 {
