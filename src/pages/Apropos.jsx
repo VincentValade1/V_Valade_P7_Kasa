@@ -1,6 +1,7 @@
 import Banner from "../components/Banner";
 import Collapse from "../components/Collapse";
 import AproposBanner from "../assets/apropos-banner.png";
+import aproposData from "../datas/apropos-data.json";
 
 function Apropos () {
     return (
@@ -9,7 +10,14 @@ function Apropos () {
                 <img src={AproposBanner} alt='vue sur un fjord' />
             </Banner>
             <div className="apropos-collapses-div">
-                <Collapse open title="Fiabilité" className="apropos-full-collapse-card">
+                {aproposData.map(({ id, title, description }) => 
+                    (
+                        <Collapse open key={id} id={id} title={title} className="apropos-full-collapse-card">
+                            {description}
+                        </Collapse>
+                    )
+                )}
+                {/* <Collapse open title="Fiabilité" className="apropos-full-collapse-card">
                     Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.
                 </Collapse>
                 <Collapse title="Respect" className="apropos-full-collapse-card">
@@ -20,7 +28,7 @@ function Apropos () {
                 </Collapse>
                 <Collapse title="Sécurité" className="apropos-full-collapse-card">
                     La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.
-                </Collapse>
+                </Collapse> */}
             </div>
         </main>
     )

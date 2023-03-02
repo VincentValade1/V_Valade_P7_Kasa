@@ -1,0 +1,34 @@
+.error-div {
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.error-div span {
+    display: flex;
+    height: 263px;
+    font-weight: 700;
+    font-size: 288px;
+    align-items: center;
+    margin-top: 174px;
+    margin-bottom: 66px;
+    
+    
+}
+
+.error-div h1 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 51px;
+    margin: 0;
+}
+
+.error-div a {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 182px;
+    text-decoration-line: underline;
+    margin-bottom: 159px;
+}
