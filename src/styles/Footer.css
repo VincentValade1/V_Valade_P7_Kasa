@@ -24,3 +24,13 @@ footer span {
 footer a {
     height: fit-content;
 }
+
+@media only screen and (max-width: 767px) {
+    footer span {
+        font-size: 12px;
+    }
+
+    .kasa-logo-footer {
+        margin-top: 62px;
+    }
+}

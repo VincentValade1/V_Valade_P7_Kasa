@@ -2,6 +2,7 @@ header {
     display: flex;
     justify-content: space-between;
     height: 68px;
+    margin-top: 40px;
 }
 
 header nav {
@@ -19,5 +20,35 @@ header a {
 
 header nav a:hover{
   border-bottom: 2px solid #FF6060  ;
+}
+
+
+/* Responsive Mobile */
+@media only screen and (max-width: 767px) {
+    header {
+      margin-top: 20px;
+      height: 47px;
+    }
+
+    header img {
+        width: 145px;
+    }
+
+    header nav {
+        width: 125px;
+    }
+
+    header a {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    header a:hover {
+        border-bottom: none;
+    }
+
+    header a:focus {
+        border-bottom: 2px solid #FF6060  ;
+    }
 }
 

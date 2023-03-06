@@ -1,34 +1,73 @@
 .card-link {
     display: flex;
-    width: 28.6%;
-    min-width: 270px;
+
+    /* flex-direction: row; */
+    width: 340px;
+    
+    flex-grow: 1;
+    /* min-width: 335px; */
+    margin-inline: 30px;
+    /* min-width: 270px; */
     border-radius: 10px;
     position: relative;
     margin-bottom: 50px;
-    margin-right: min(4.7%);
+    /* margin-right: min(4.7%); */
     transition: all .2s ease-in-out; 
+    aspect-ratio: 1 / 1;
 }
 
 .card-link img {
-    height: 340px;
+    /* height: 340px; */
+    position: absolute;
+    height: 100%;
     width: 100%;
     border-radius: 10px;
+    z-index: 0;
 }
 
 .card-link h2 {
-    position: absolute;
+    /* position: absolute; */
+    display: flex;
+    align-self: flex-end;
+    z-index: 5;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    /* width: 100%; */
+    height: auto ;
     color: white;
     font-size: 18px;
     font-weight: 500;
-    line-height: 26px;
+    line-height: 142.6%;
+    margin: 20px;
+    /* line-height: 26px; */
     /* letter-spacing: 0em; */
-    height: 52px;
-    width: auto;
-    left: 20px;
-    right: 20px;
-    top: 268px;
+    /* height: 52px; */
+    
+    /* left: 5.88%;
+right: 5.88%;
+top: 78.82%;
+bottom: 5.88%; */
 }
 
 .card-link:hover {
     transform: scale(1.1); 
+}
+
+@media only screen and (max-width: 1040px) {
+    .card-link {
+        /* aspect-ratio: none; */
+        height: 255px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .card-link {
+        margin-inline: 0;
+        margin-bottom: 20px;
+    }
+
+    .card-link:hover {
+        transform: none;
+    }
 }
