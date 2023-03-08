@@ -12,16 +12,16 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .host-rate-div {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     flex-direction: column;
 }
 
 .host-portrait {
-    display: flex;
     width: 64px;
     height: 64px;
     border-radius: 32px;
@@ -30,26 +30,31 @@
 .host-name {
     display: flex;
     align-items: flex-end;
-    /* width: 60px; */
     text-align: right;
     margin-right: 10px;
     white-space:pre-line;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .stars-rates-div {
     display: flex;
     justify-content: flex-end;
-    margin-top: 24px;
+    margin-top: 30px;
     width: 100%;
     justify-content: space-between;
+}
+
+.name-tags-div {
+    margin-right: 20px;
 }
 
 .name-tags-div h1 {
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
-    line-height: 64px;
-    margin: 0;
+    margin-bottom: 5px;
+    margin-top: 0;
 }
 
 .name-tags-div h2 {
@@ -61,9 +66,9 @@
 
 .tags-div {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     padding-inline-start: 0;
-    min-height: 25px;
     margin-bottom: 0;
 }
 
@@ -75,14 +80,61 @@
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 20px;
+    height: 25px;
     text-align: center;
     align-items: center;
     margin-right: 10px;
+    margin-bottom: 10px;
     padding-inline: 30px;
 }
 
-.logement-collapses-div {
-    display: flex;
-    flex-direction: row;
+@media only screen and (max-width: 767px) {
+    .data-container {
+        margin-top: 0;
+    }
+
+    .top-data-div {
+        flex-direction: column;
+    }
+
+    .tags-div {
+        margin-top: 10px;
+    }
+
+    .tag {
+        border-radius: 5px;
+        height: 18px;
+        font-size: 12px;
+    }
+    
+    .host-rate-div {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        height: 32px;
+    }
+
+    .stars-rates-div {
+        height: 15px;
+        width: 98px;
+        margin: 0;
+    }
+
+    .host-portrait {
+        width: 32px;
+        height: 32px;
+    }
+
+    .host-name {
+        font-size: 12px;
+    }
+
+    .name-tags-div h1 {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    .name-tags-div h2 {
+        font-size: 14px;
+    }
 }

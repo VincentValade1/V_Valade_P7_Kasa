@@ -36,6 +36,14 @@ ul {
   list-style: none;
 }
 
+p {
+  margin: 0;
+}
+
+/* .radius {
+  border-radius: 10px;
+} */
+
 /* masquage scrollbar latéral de la page */
 ::-webkit-scrollbar {
   display: none;

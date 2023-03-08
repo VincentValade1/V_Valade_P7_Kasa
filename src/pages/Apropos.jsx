@@ -13,7 +13,7 @@ function Apropos () {
                 {aproposData.map(({ id, title, description }) => 
                     (
                         <Collapse open key={id} id={id} title={title} className="apropos-full-collapse-card">
-                            {description}
+                            <p>{description}</p>
                         </Collapse>
                     )
                 )}

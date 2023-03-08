@@ -2,7 +2,6 @@ header {
     display: flex;
     justify-content: space-between;
     height: 68px;
-    /* margin-top: 40px; */
 }
 
 header nav {
@@ -47,8 +46,7 @@ header nav a:hover{
         border-bottom: none;
     }
 
-    header a:focus {
+    header nav:focus {
         border-bottom: 2px solid #FF6060  ;
     }
 }
-

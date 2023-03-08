@@ -28,7 +28,8 @@ function LogementMenu({ matchingAppart, id }) {
             </div>
             <div className="logement-collapses-div">
                 <Collapse  open title='Description' className="logement-full-collapse-card">
-                    {matchingAppart.description}
+                    <p>{matchingAppart.description}</p>
+                    
                 </Collapse>
                 <Collapse title='Équipements' className="logement-full-collapse-card">
                     <ul className="equipments-div">

@@ -1,27 +1,15 @@
 .card-link {
     display: flex;
     width: 28.334%;
-    
-    /* flex-direction: row; */
-    /* width: 28%;
-    flex: 1 1 auto;
-    height: 340px; */
-    /* flex-grow: 1; */
-    /* min-width: 335px; */
-    /* margin-inline: min(30px); */
-    /* min-width: 270px; */
     margin-inline: 2.49966%;
     border-radius: 10px;
     position: relative;
     margin-bottom: 50px;
-    /* margin-right: min(4.7%); */
     transition: all .2s ease-in-out; 
     aspect-ratio: 1 / 1;
 }
 
 .card-link img {
-    /* height: 340px; */
-    
     position: absolute;
     height: 100%;
     width: 100%;
@@ -30,27 +18,17 @@
 }
 
 .card-link h2 {
-    /* position: absolute; */
     display: flex;
     align-self: flex-end;
     z-index: 5;
     flex-direction: row;
     flex-wrap: wrap; 
-    /* width: 100%; */
     height: auto ;
     color: white;
     font-size: 18px;
     font-weight: 500;
     line-height: 142.6%;
     margin: 20px;
-    /* line-height: 26px; */
-    /* letter-spacing: 0em; */
-    /* height: 52px; */
-    
-    /* left: 5.88%;
-right: 5.88%;
-top: 78.82%;
-bottom: 5.88%; */
 }
 
 .card-link:hover {
@@ -59,9 +37,12 @@ bottom: 5.88%; */
 
 @media only screen and (max-width: 1040px) {
     .card-link {
-        /* aspect-ratio: none; */
         height: 255px;
         width: 100%;
+    }
+
+    .card-link:hover {
+        transform: none;
     }
 }
 
@@ -69,9 +50,5 @@ bottom: 5.88%; */
     .card-link {
         margin-inline: 0;
         margin-bottom: 20px;
-    }
-
-    .card-link:hover {
-        transform: none;
     }
 }
