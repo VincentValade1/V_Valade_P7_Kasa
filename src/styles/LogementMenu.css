@@ -28,11 +28,8 @@
 }
 
 .host-name {
-    display: flex;
-    align-items: flex-end;
     text-align: right;
     margin-right: 10px;
-    white-space:pre-line;
     font-size: 18px;
     font-weight: 500;
 }

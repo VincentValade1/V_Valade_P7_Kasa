@@ -3,7 +3,9 @@ import Ratingstars from './Ratingstars';
 import '../styles/LogementMenu.css'
 
 function LogementMenu({ matchingAppart, id }) {
-    
+
+    const splitedName = matchingAppart.host.name.split(" ");
+
     return (
         <div className='data-container'>
             <div className="top-data-div">
@@ -18,8 +20,13 @@ function LogementMenu({ matchingAppart, id }) {
                 </div>
                 <div className="host-rate-div">
                     <div className="host-div">
-                        <h3 className='host-name'>{matchingAppart.host.name}</h3>
-                        <img key={id} className='host-portrait' src= {matchingAppart.host.picture} alt='host portrait' />
+                        <div className='host-name'>
+                            {splitedName.map((namepart, index) => (
+                                <span key={index}>{namepart}<br/></span>
+                            ))}
+                        </div>    
+                            
+                    <img key={id} className='host-portrait' src= {matchingAppart.host.picture} alt='host portrait' />
                     </div>
                     <div className='stars-rates-div'>
                         <Ratingstars matchedRate={matchingAppart.rating} maxRate={5} />

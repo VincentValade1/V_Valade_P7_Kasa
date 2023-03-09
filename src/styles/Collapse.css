@@ -91,7 +91,7 @@
     height: 23px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1040px) {
     .logement-collapses-div {
         flex-direction: column;
         width: 100%;
@@ -104,6 +104,12 @@
         margin-bottom: 20px;
     }
 
+    .apropos-collapses-div {
+        margin-inline: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
     .collapse-card-header {
         height: 30px;
         padding-left: 11.5px;
@@ -122,10 +128,6 @@
         border-radius: 0 0 5px 5px;
         font-size: 12px;
         line-height: 17px;
-    }
-
-    .apropos-collapses-div {
-        margin-inline: 0;
     }
 
     .svg-inline--fa {

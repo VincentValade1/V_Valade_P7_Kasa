@@ -32,3 +32,36 @@
     text-decoration-line: underline;
     margin-bottom: 159px;
 }
+
+@media only screen and (max-width: 1040px) {
+    .error-div span {
+        font-size: 150px;
+    }
+
+    .error-div h1 {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .error-div span {
+        font-size: 115px;
+        margin-top: 195px;
+        height: 99px;
+        width: 198px;
+        margin-inline: 88px;
+        margin-bottom: 11px;
+    }
+
+    .error-div h1 {
+        font-size: 18px;
+        line-height: 26px;
+        margin-inline: 57px;
+    }
+
+    .error-div a {
+        margin-top: 133px;
+        margin-bottom: 235px;
+        font-size: 14px;
+    }
+}
