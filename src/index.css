@@ -23,10 +23,6 @@ img {
   font-family: 'Roboto', sans-serif;
 }
 
-h2 {
-  font-family: 'Roboto', sans-serif;
-}
-
 main, header {
   margin-inline: 100px;
 
@@ -39,10 +35,6 @@ ul {
 p {
   margin: 0;
 }
-
-/* .radius {
-  border-radius: 10px;
-} */
 
 /* masquage scrollbar latéral de la page */
 ::-webkit-scrollbar {

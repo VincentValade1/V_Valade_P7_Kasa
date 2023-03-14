@@ -7,8 +7,7 @@
 
 .slideshow-section img {
     border-radius: 25px;
-    max-height: 415px;
-    min-height: 255px;
+    height: 415px;
     width: 100%;
 }
 
@@ -51,7 +50,7 @@
     line-height: 26px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1040px) {
     .arrow {
         font-size: 24px;
         width: 24px;
@@ -67,7 +66,7 @@
     }
 
     .slideshow-section {
-        height: 255px;
+        height: 223px;
         margin-top: 27px;
     }
 
@@ -76,6 +75,12 @@
         height: 100%;
     }
 
+    .bulletpoint {
+        bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
     .bulletpoint {
         display: none;
     }
