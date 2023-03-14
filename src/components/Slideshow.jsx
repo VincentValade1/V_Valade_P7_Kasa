@@ -51,14 +51,14 @@ function Slideshow({ slides, id }) {
                                 <FaChevronRight className="arrow right" onClick={nextSlide} />
                             </div>
                         )
-                    }else{
-                        // si le logement n'a qu'une seule image, on retourne la div image sans le bullet point ni les fleches
-                        return (
-                            <div key={index} className={index === activeImage ? 'slide active' : 'slide'}>
-                                {index === activeImage && (<img src={picture} alt="apercu du logement" key={id + index} />)}
-                            </div>
-                        )
                     }
+
+                    // si le logement n'a qu'une seule image, on retourne la div image sans le bullet point ni les fleches
+                    return (
+                        <div key={index} className={index === activeImage ? 'slide active' : 'slide'}>
+                            {index === activeImage && (<img src={picture} alt="apercu du logement" key={id + index} />)}
+                        </div>
+                    )
                 })}
             </section>
             // sinon aucune image n'est présente, on ne renvoie pas de div vide.
