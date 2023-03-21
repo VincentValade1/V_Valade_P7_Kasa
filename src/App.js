@@ -1,6 +1,6 @@
 import Router from './router/Router';
-// import './App.css';
 
+// ici on crée notre function App qui contient simplement tout le contenu de notre Router.s
 function App() {
   return <Router />;
 }
