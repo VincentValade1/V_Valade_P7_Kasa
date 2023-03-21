@@ -1,3 +1,5 @@
+/* CSS Footer */
+
 footer {
     width: 100%;
     height: 209px;
@@ -25,6 +27,7 @@ footer a {
     height: fit-content;
 }
 
+/* Responsive Footer Mobile */
 @media only screen and (max-width: 767px) {
     footer span {
         font-size: 12px;

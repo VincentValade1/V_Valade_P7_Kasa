@@ -1,3 +1,5 @@
+/* CSS LogementCard */
+
 .card-link {
     display: flex;
     width: 28.334%;
@@ -20,8 +22,7 @@
 .card-link h2 {
     display: flex;
     align-self: flex-end;
-    z-index: 5;
-    flex-direction: row;
+    z-index: 1;
     flex-wrap: wrap; 
     height: auto ;
     color: white;
@@ -35,6 +36,7 @@
     transform: scale(1.1); 
 }
 
+/* Responsive LogementCard Tablette */
 @media only screen and (max-width: 1040px) {
     .card-link {
         height: 255px;
@@ -46,6 +48,7 @@
     }
 }
 
+/* Responsive LogementCard Mobile */
 @media only screen and (max-width: 767px) {
     .card-link {
         margin-inline: 0;

@@ -3,6 +3,8 @@ import '../styles/Footer.css'
 
 import { HashLink as Link } from 'react-router-hash-link';
 
+// fonction Footer qui retourne un footer avec un logo, qui sera une ancre (hook HashLink) vers notre haut de page d'accueil.
+// un id=topPage a été ajouté sur la balise <html> de notre index.html.
 function Footer() {
     return (
         <footer>

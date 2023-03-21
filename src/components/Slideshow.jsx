@@ -2,7 +2,7 @@ import '../styles/Slideshow.css';
 import React, { useState } from 'react';
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-// fonction du slideshow (Carousel)
+// fonction du Slideshow (Carousel)
 // on récupère en props la valeur de slides(matchingappart.pictures) et l'id de l'url pour les key
 function Slideshow({ slides, id }) {
 
@@ -26,7 +26,7 @@ function Slideshow({ slides, id }) {
         setactiveImage(activeImage !== lastIndicePicture ? activeImage +1 : firstIndicePicture);
     }
 
-    // fonction pour le clic sur précédant qui set le activeImage à -1 mais à 0 lorsqu'on arrive sur la première image pour revenir à la dernière
+    // fonction pour le clic sur précédant qui set le activeImage à -1 mais à lastIndicePicture lorsqu'on arrive sur la première image pour revenir à la dernière
     function previousSlide() {
         setactiveImage(activeImage !== firstIndicePicture ? activeImage -1 : lastIndicePicture);
     }
@@ -35,18 +35,18 @@ function Slideshow({ slides, id }) {
     return ((Array.isArray(slides) && slideLength > 0) ?
         (
             <section className='slideshow-section'>
-                {/* on itère sur les images de notre logement */}
+                {/* on map les images de notre logement */}
                 {slides.map((picture, index) => {
                     // si on a plus d'une image, on crée notre div avec le bullet point et les flèches pour changer d'image
                     if(slideLength > 1) {
                         return (
-                            // ici on crée une class de div 'slide active' pour l'index de l'image courante et une 'slide' pour les autres
+                            // ici on crée une class 'slide active' pour l'index de l'image courante et une 'slide' pour les autres
                             <div key={index} className={index === activeImage ? 'slide active' : 'slide'}>
                                 {/* on affiche l'image où la position courante est égale à l'index du tableau d'images */}
                                 {index === activeImage && (<img src={picture} alt="apercu du logement" key={id + index} />)}
                                 {/* on ajoute le bullet point de l'image actuelle */}
                                 <span className='bulletpoint'>{activeImageBulletPoint}/{slideLength}</span>
-                                {/* on ajoute nos icônes chevrons (react-icons) avec les fonctions de clics atitrées */}
+                                {/* on ajoute nos icônes chevrons (react-icons) avec les fonctions de clics correspondantes */}
                                 <FaChevronLeft className="arrow left" onClick={previousSlide} />
                                 <FaChevronRight className="arrow right" onClick={nextSlide} />
                             </div>

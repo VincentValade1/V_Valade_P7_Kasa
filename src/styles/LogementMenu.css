@@ -1,16 +1,16 @@
+/* CSS LogementMenu */
+
 .data-container {
     margin-top: 30px;
 }
 
 .top-data-div {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
 .host-div {
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
 }
@@ -76,13 +76,13 @@
     font-weight: 500;
     font-size: 14px;
     height: 25px;
-    text-align: center;
     align-items: center;
     margin-right: 10px;
     margin-bottom: 10px;
     padding-inline: 30px;
 }
 
+/* Responsive LogementMenu Mobile */
 @media only screen and (max-width: 767px) {
     .data-container {
         margin-top: 0;

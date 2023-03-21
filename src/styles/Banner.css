@@ -1,3 +1,5 @@
+/* CSS Banner */
+
 .banner {
     display: flex;
     justify-content: center;
@@ -33,6 +35,7 @@
     margin-top: 46px;
 }
 
+/* Responsive Banner Mobile */
 @media only screen and (max-width: 767px) {
     .banner {
         border-radius: 10px;

@@ -1,3 +1,5 @@
+/* CSS LogementList */
+
 .logements-list-div {
     display: flex;
     flex-direction: row;
@@ -10,6 +12,7 @@
     border-radius: 25px;
 }
 
+/* Responsive LogementList Mobile */
 @media only screen and (max-width: 767px) {
     .logements-list-div {
         padding: 0;

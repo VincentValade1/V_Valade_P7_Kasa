@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// dans notre index.js, on crée notre Dom React à l'interieur de l'id html 'root', dans lequel on injecte notre App.
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

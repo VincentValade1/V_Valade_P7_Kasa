@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import logo from '../assets/kasa-logo.png'
 import '../styles/Header.css'
 
+// fonction Header qui retourne un header avec le logo comme lien vers l'accueil et les liens vers nos pages accueil et a-propos.
 function Header() {
     return (
         <header>

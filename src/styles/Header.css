@@ -1,3 +1,5 @@
+/* CSS header */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -21,8 +23,7 @@ header nav a:hover{
   border-bottom: 2px solid #FF6060  ;
 }
 
-
-/* Responsive Mobile */
+/* Responsive Mobile Header */
 @media only screen and (max-width: 767px) {
     header {
       margin-top: 20px;
@@ -46,7 +47,7 @@ header nav a:hover{
         border-bottom: none;
     }
 
-    header nav:focus {
-        border-bottom: 2px solid #FF6060  ;
+    header nav a:focus {
+        border-bottom: 2px solid #FF6060;
     }
 }

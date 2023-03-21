@@ -1,3 +1,5 @@
+/* CSS Error */
+
 .error-div {
     display: flex;
     flex-direction: column;
@@ -14,8 +16,6 @@
     align-items: center;
     margin-top: 174px;
     margin-bottom: 66px;
-    
-    
 }
 
 .error-div h1 {
@@ -33,6 +33,7 @@
     margin-bottom: 159px;
 }
 
+/* Responsive Error Tablette */
 @media only screen and (max-width: 1040px) {
     .error-div span {
         font-size: 150px;
@@ -43,6 +44,7 @@
     }
 }
 
+/* Responsive Error Mobile */
 @media only screen and (max-width: 767px) {
     .error-div span {
         font-size: 115px;
