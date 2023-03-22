@@ -36,10 +36,7 @@
 
 .stars-rates-div {
     display: flex;
-    justify-content: flex-end;
     margin-top: 30px;
-    width: 100%;
-    justify-content: space-between;
 }
 
 .name-tags-div {
@@ -72,7 +69,6 @@
     background: #FF6060;
     border-radius: 10px;
     color: white;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     height: 25px;

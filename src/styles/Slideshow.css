@@ -15,14 +15,12 @@
 
 .slide {
     opacity: 0;
-    transition-duration: 0.5s ease;
 }
   
 .slide.active {
+    transition: 0.5s;
     opacity: 1;
-    transition-duration: 0.5s;
     width: 100%;
-    align-items: center;
 }
 
 .arrow {

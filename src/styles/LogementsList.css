@@ -2,7 +2,6 @@
 
 .logements-list-div {
     display: flex;
-    flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
     padding: 56px 20px 0 20px;
