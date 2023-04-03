@@ -10,7 +10,7 @@ function LogementsList() {
             {logements.map(({ id, title, cover }) => 
                 (
                     // on passe en props l'id, l'image de cover et le titre du logement pour chaque composant LogementCard.
-                    <LogementCard  key={id} id={id} cover={cover} title={title} />
+                    <LogementCard key={id} id={id} cover={cover} title={title} />
                 )
             )}
         </ul>

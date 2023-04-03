@@ -41,7 +41,7 @@ function LogementMenu({ matchingAppart, id }) {
             </div>
             <div className="logement-collapses-div">
                 {/* on affiche un composant Collapse avec pour enfant la description du logement actuel */}
-                <Collapse  open title='Description' className="logement-full-collapse-card">
+                <Collapse title='Description' className="logement-full-collapse-card">
                     <p>{matchingAppart.description}</p>
                 </Collapse>
                 {/* on affiche un composant Collapse avec pour enfant une liste <li> des équipements de notre logement actuel */}

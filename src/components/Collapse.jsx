@@ -4,9 +4,9 @@ import { faChevronUp, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import '../styles/Collapse.css';
 
 // fonction Collapse qui récupère en props la valeur initiale 'collapse open', les enfants, le titre, et une className.
-function Collapse ({ open, children, title, className }) {
+function Collapse ({ children, title, className }) {
     // on utilise le hook useState pour définir un état initial à ouvert.
-    const [isOpen, setIsOpen] = useState(open);
+    const [isOpen, setIsOpen] = useState(false);
 
     // fonction qui va gérer l'ouverture et la fermeture en modifiant l'état actuel à l'état opposé, à chaque clic.
     const handleFilterOpening = () => {
