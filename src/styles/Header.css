@@ -19,7 +19,8 @@ header a {
     font-size: 24px;
 }
 
-header nav a:hover{
+/* ajout du soulignage sur le lien actif */
+header nav a.active {
   border-bottom: 2px solid #FF6060  ;
 }
 
